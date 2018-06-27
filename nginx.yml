@@ -1,0 +1,10 @@
+---
+
+- name: instalando o nginx na maquina docker
+  hosts: docker
+  remote_user: root
+  tasks:
+   - name: instalando o nginx
+     apt:
+      name: nginx
+      state: present
